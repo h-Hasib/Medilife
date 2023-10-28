@@ -1,0 +1,80 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es2017"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    // "paths": [
+    //   {
+    //     "alias": "@components",
+    //     "path": "./src/components"
+    //   },
+    //   {
+    //     "alias": "@screens",
+    //     "path": "./src/screens"
+    //   },
+    //   {
+    //     "alias": "@assets",
+    //     "path": "./src/assets"
+    //   },
+    //   {
+    //     "alias": "@utils",
+    //     "path": "./src/utils"
+    //   },
+    //   {
+    //     "alias": "@constants",
+    //     "path": "./src/constants"
+    //   },
+    //   {
+    //     "alias": "@hooks",
+    //     "path": "./src/hooks"
+    //   },
+    //   {
+    //     "alias": "@navigation",
+    //     "path": "./src/navigation"
+    //   },
+    //   {
+    //     "alias": "@services",
+    //     "path": "./src/services"
+    //   },
+    //   {
+    //     "alias": "@store",
+    //     "path": "./src/store"
+    //   },
+    //   {
+    //     "alias": "@types",
+    //     "path": "./src/types"
+    //   }
+    // ]
+    "paths": {
+      "@components": ["./src/components"],
+      "@screens": ["./src/screens"],
+      "@assets": ["./src/assets"],
+      "@utils": ["./src/utils"],
+      "@constants": ["./src/constants"],
+      "@hooks": ["./src/hooks"],
+      "@navigation": ["./src/navigation"],
+      "@services": ["./src/services"],
+      "@store": ["./src/store"],
+      "@types": ["./src/types"]
+    }
+  },
+
+  "exclude": [
+    "./node_modules",
+    "./babel.config.js",
+    "./metro.config.js",
+    "./.prettierrc.js",
+    "./.eslintrc.js"
+  ]
+}
